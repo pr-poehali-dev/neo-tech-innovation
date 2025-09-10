@@ -72,7 +72,9 @@ const Index = () => {
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/img/2ccd6492-2351-4e96-af42-164573b2a9b7.jpg" alt="CyberBun Logo" className="w-12 h-12 rounded-lg object-cover" />
+            <div className="w-12 h-12 cyber-gradient rounded-lg flex items-center justify-center cyber-glow animate-pulse">
+              <Icon name="Zap" size={24} className="text-white animate-bounce" />
+            </div>
             <div>
               <h1 className="text-2xl font-bold text-white">CyberBun</h1>
               <p className="text-sm text-blue-300">Технобулочка будущего</p>
@@ -94,6 +96,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 text-center">
         <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center mb-8">
+            <div className="w-20 h-20 cyber-gradient rounded-full flex items-center justify-center cyber-glow animate-pulse">
+              <Icon name="Zap" size={40} className="text-white animate-bounce" />
+            </div>
+          </div>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Инновации в <span className="text-blue-400">IT</span>
           </h2>
