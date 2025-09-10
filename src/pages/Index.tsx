@@ -72,7 +72,7 @@ const Index = () => {
       <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/img/3bb605c6-df55-4c6a-a9aa-d30efb995cbb.jpg" alt="CyberBun Logo" className="w-12 h-12 rounded-lg" />
+            <img src="/img/2ccd6492-2351-4e96-af42-164573b2a9b7.jpg" alt="CyberBun Logo" className="w-12 h-12 rounded-lg object-cover" />
             <div>
               <h1 className="text-2xl font-bold text-white">CyberBun</h1>
               <p className="text-sm text-blue-300">Технобулочка будущего</p>
