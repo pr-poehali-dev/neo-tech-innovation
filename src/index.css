@@ -1,23 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 30% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 30% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 30% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 192 100% 50%;
+    --secondary-foreground: 220 30% 5%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -97,5 +99,34 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family:
+      "Montserrat",
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+  }
+}
+
+@layer components {
+  .cyber-gradient {
+    background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+  }
+
+  .cyber-text-gradient {
+    background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cyber-glow {
+    box-shadow:
+      0 0 20px rgba(0, 102, 255, 0.3),
+      0 0 40px rgba(0, 204, 255, 0.2);
+  }
+
+  .cyber-border {
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    background: rgba(0, 102, 255, 0.05);
   }
 }
